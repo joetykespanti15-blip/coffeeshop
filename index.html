@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean & Brew</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Bean & Brew</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#game-section">Play Game</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <h1>Bean & Brew <br><span>
+            
+            <!-- Dedicated text container for your sentence -->
+            <div class="welcome-box">
+                <p>Our coffee shop welcomes you with a warm atmosphere and a commitment to ethically sourced, small-batch roasted beans that truly stand out from the competition. We are best known for our signature Cold Brew and velvety Flat Whites, which have become neighborhood favorites since we first opened our doors. The business began as a small garage passion project in 2010 and has since grown into a beloved community hub built on a foundation of quality and ritual. Every cup we serve tells the story of our journey from humble beginnings to a premier destination for coffee enthusiasts..</p>
+                <!-- YOU CAN PUT YOUR NEW SENTENCE HERE -->
+            </div>
+
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section (10 Items) -->
+    <section id="menu" class="content-section">
+        <h2>Our Menu</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img"><img src="image/espresso.jpg"></div>
+                <h3>Espresso</h3>
+                <p class="price">70.00</p>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="image/americano.jpg"></div>
+                <h3>Americano</h3>
+                <p class="price">75.00</p>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="image/latte.jpg"></div>
+                <h3>Latte</h3>
+                <p class="price">70.00</p>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="image/capuccino.jpg"></div>
+                <h3>Capuccino</h3>
+                <p class="price">80.00</p>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="image/flatwhite.jpg"></div>
+                <h3>Flat white</h3>
+                <p class="price">85.00</p>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="image/mocha.jpg"></div>
+                <h3>Mocha</h3>
+                <p class="price">95.00</p>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="image/macchiato.jpg"></div>
+                <h3>Macchiato</h3>
+                <p class="price">105.00</p>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="image/cold brew.jpg"></div>
+                <h3>Cold Brew</h3>
+                <p class="price">85.00</p>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="image/affogato.jpg"></div>
+                <h3>Affogato</h3>
+                <p class="price">130.00</p>
+            </div>
+            <div class="card">
+                <div class="card-img"><img src="image/Vietnamese coffee.jpg"></div>
+                <h3>Vietnamese</h3>
+                <p class="price">125.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game-section" class="content-section secondary">
+        <h2>Barista Rush</h2>
+        <p>Catch the falling items in your mug! Don't let them hit the floor.</p>
+        <div class="game-wrapper">
+            <canvas id="gameCanvas"></canvas>
+            <div id="gameOverlay">
+                <button id="startBtn" class="btn">Start Game</button>
+            </div>
+        </div>
+        <h3 id="scoreBoard">Score: 0</h3>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
